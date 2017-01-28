@@ -1,0 +1,74 @@
+article, nav, footer, aside {
+    background: rgba(0,0,0,0.6); /* Полупрозрачный фон */
+    color: #fff; /* Цвет текста */
+    padding: 20px; /* Поля вокруг текста */
+    margin: 5px;
+    }
+
+header, footer, aside, p {
+  text-align: center; 
+}
+
+li {
+   display: inline-block;
+   border:1px solid #808080;
+   margin: 1px;
+   padding: 3px;
+   }
+
+form{
+  width: 33%;
+  display: inline-block;  
+  vertical-align: top;
+}
+
+fieldset {  
+  margin-bottom: 15px;
+  padding: 10px;  
+}
+
+legend {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-align: center;  
+}
+
+label {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+
+input:focus {
+  background: #eaeaea;
+}
+
+input, textarea {
+  width: 249px;
+}
+
+textarea {
+  width: 98%;
+  height: 100px;
+}
+
+select {
+  width: 254px;
+}
+
+input[type=checkbox] {
+  width: 30px;
+}
+
+input[type=submit] {
+  width: 170px;
+  padding: 10px;
+}

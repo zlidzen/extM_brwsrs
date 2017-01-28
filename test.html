@@ -1,0 +1,98 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+        <meta charset="UTF-8" />
+        <script type="text/javascript" src="test.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Test_EM</title>
+<!--style>
+    article, nav, footer, aside {
+    background: rgba(0,0,0,0.6); /* Полупрозрачный фон */
+    color: #fff; /* Цвет текста */
+    padding: 20px; /* Поля вокруг текста */
+    margin: 5px;
+    }
+    li {
+	   display: inline-block;
+	   border:1px solid #808080;
+	   margin: 1px;
+	   padding: 3px;}
+</style-->
+</head>
+<body id= "b_main">
+  <header>
+    <nav>
+    <ul>
+      <li><a id="btn_action" href="#" onclick="action_btn()" state="a">Action</a></li> <!-- a/p-->
+      <!--li><a href=# onclick="f_scroll('2point')">интересное</a></li>
+      <li><a href=# onclick="f_scroll('3point')">архив</a></li>
+      <li><a href=#>О нас</a></li-->
+    </ul>
+    </nav>
+  </header>
+  <section>
+    <article>
+      <!--header>
+        <h2>Form_action</h2>
+      </header-->
+      
+      <form action="#">
+        <fieldset>
+          <legend>Form_exterminater</legend>          
+          <label> Nsme: </label> <label id = "Name_ex"> ____</label><br>
+          <label> Level: </label><label id = "Level_ex"> 100</label><br>
+          <label> Health: </label><label id = "Health_ex"> 100 %</label><br>
+          <label> Strength: </label><label id = "Strength_ex"> 100</label><br>
+          <label> Endurance: </label><label id = "Endurance_ex"> 100</label><br>
+          <label> Attack: </label><label id = "Attack_ex"> 100d100</label><br>
+          <label> Block: </label><label id = "Block_ex"> 100d100</label><br>
+          <label> Experience: </label><label id = "Experience_ex"> 100k</label><br>
+        </fieldset>
+      </form>
+
+      <form action="#">
+        <fieldset>
+          <legend>Form_action</legend>
+          <label for = "Head_p"> Head </label>
+          <input name = "shbx" id="Head_p" type="checkbox" onchange="chbxEvent('Head_p')"><br> <!-- checked -->
+          <label for = "Arms_p">Arms</label>
+          <input name = "shbx" id="Arms_p" type="checkbox" onchange="chbxEvent('Arms_p')"><br>
+          <label for = "Body_p">Body</label>
+          <input name = "shbx" id="Body_p" type="checkbox" onchange="chbxEvent('Body_p')"><br>
+          <label for = "Body_down_p">Genitals</label>
+          <input name = "shbx" id="Body_down_p" type="checkbox" onchange="chbxEvent('Body_down_p')"><br>
+          <label for = "Legs_p">Legs</label>
+          <input name = "shbx" id="Legs_p" type="checkbox" onchange="chbxEvent('Legs_p')"><br>
+        </fieldset>
+      </form>
+
+      <form action="#">
+        <fieldset>
+          <legend>Form_monster</legend>
+          <label> Nsme: </label><label id = "Name_m"> ____</label><br>
+          <label> Level: </label><label id = "Level_m"> 100</label><br>
+          <label> Health: </label><label id = "Health_m"> 100 %</label><br>
+          <label> Strength: </label><label id = "Strength_m"> 100</label><br>
+          <label> Endurance: </label><label id = "Endurance_m"> 100</label><br>
+          <label> Attack: </label><label id = "Attack_m"> 100d100</label><br>
+          <label> Block: </label><label id = "Block_m"> 100d100</label><br>
+        </fieldset>
+      </form>
+ 
+
+  <p><input type="submit" value="Action"></p>
+  <p><textarea readonly></textarea></p>    
+
+    </article>
+  </section>
+
+   <aside id="1point"><!-- -->
+    <h2>Об авторе</h2>
+    <p>Нет никого, кто любил бы боль саму по себе, кто искал бы её и кто хотел бы иметь её просто потому, что это боль..</p>
+   </aside>
+
+   <footer>
+     <p>Copyright 2017 GIT_lab</p>
+   </footer>
+</body>
+</html>
