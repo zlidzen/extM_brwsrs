@@ -1,32 +1,21 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
-        <meta charset="UTF-8" />
-        <script type="text/javascript" src="test.js"></script>
+        <meta charset="UTF-8" />        
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Test_EM</title>
-<!--style>
-    article, nav, footer, aside {
-    background: rgba(0,0,0,0.6); /* Полупрозрачный фон */
-    color: #fff; /* Цвет текста */
-    padding: 20px; /* Поля вокруг текста */
-    margin: 5px;
-    }
-    li {
-	   display: inline-block;
-	   border:1px solid #808080;
-	   margin: 1px;
-	   padding: 3px;}
-</style-->
+        <script type="text/javascript" src="test.js"></script>
 </head>
 <body id= "b_main">
   <header>
     <nav>
     <ul>
-      <li><a id="btn_action" href="#" onclick="action_btn()" state="a">Action</a></li> <!-- a/p-->
-      <!--li><a href=# onclick="f_scroll('2point')">интересное</a></li>
-      <li><a href=# onclick="f_scroll('3point')">архив</a></li>
-      <li><a href=#>О нас</a></li-->
+    <!-- a/p-->
+      <!--li><a id="btn_action" href="#" onclick="action_btn()" state="a">Action</a></li--> 
+      <li><a href="#" onclick="new_btn()">New game</a></li>      
+      <li><a href="#" onclick="load_m_btn()">Load monster</a></li> 
+      <li><a href="#" onclick="start_btn()">Start game</a></li>
+      <li><a href="#">Game rules</a></li>      
     </ul>
     </nav>
   </header>
@@ -52,17 +41,18 @@
 
       <form action="#">
         <fieldset>
+        <!-- checked -->
           <legend>Form_action</legend>
           <label for = "Head_p"> Head </label>
-          <input name = "shbx" id="Head_p" type="checkbox" onchange="chbxEvent('Head_p')"><br> <!-- checked -->
+          <input name = "shbx" id="Head_p" type="checkbox" onchange="chbxEvent('Head_p')" disabled><br> 
           <label for = "Arms_p">Arms</label>
-          <input name = "shbx" id="Arms_p" type="checkbox" onchange="chbxEvent('Arms_p')"><br>
+          <input name = "shbx" id="Arms_p" type="checkbox" onchange="chbxEvent('Arms_p')" disabled><br>
           <label for = "Body_p">Body</label>
-          <input name = "shbx" id="Body_p" type="checkbox" onchange="chbxEvent('Body_p')"><br>
+          <input name = "shbx" id="Body_p" type="checkbox" onchange="chbxEvent('Body_p')" disabled><br>
           <label for = "Body_down_p">Genitals</label>
-          <input name = "shbx" id="Body_down_p" type="checkbox" onchange="chbxEvent('Body_down_p')"><br>
+          <input name = "shbx" id="Body_down_p" type="checkbox" onchange="chbxEvent('Body_down_p')" disabled><br>
           <label for = "Legs_p">Legs</label>
-          <input name = "shbx" id="Legs_p" type="checkbox" onchange="chbxEvent('Legs_p')"><br>
+          <input name = "shbx" id="Legs_p" type="checkbox" onchange="chbxEvent('Legs_p')" disabled><br>
         </fieldset>
       </form>
 
@@ -79,9 +69,8 @@
         </fieldset>
       </form>
  
-
-  <p><input type="submit" value="Action"></p>
-  <p><textarea readonly></textarea></p>    
+  <p><input id = "do_btn" type = "submit" value="Action" disabled></p>
+  <p><textarea id = "out_area" readonly></textarea></p>    
 
     </article>
   </section>
@@ -95,4 +84,5 @@
      <p>Copyright 2017 GIT_lab</p>
    </footer>
 </body>
+
 </html>

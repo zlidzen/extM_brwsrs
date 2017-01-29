@@ -58,6 +58,9 @@ input, textarea {
 textarea {
   width: 98%;
   height: 100px;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: text-bottom;
 }
 
 select {
